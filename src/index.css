@@ -1,0 +1,107 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app {
+  width: 100%;
+  max-width: 400px;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+h1 {
+  margin-bottom: 1rem;
+  font-size: 1.75rem;
+  text-align: center;
+}
+
+.feedback {
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 1.25rem;
+  color: #555;
+}
+
+.guess-input {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.guess-input input[type="number"] {
+  flex: 1;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.guess-input input:disabled {
+  background-color: #e9ecef;
+}
+
+.guess-input button {
+  margin-left: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.guess-input button:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+.guess-input button:not(:disabled):hover {
+  background-color: #0056b3;
+}
+
+.history {
+  list-style: none;
+  margin-bottom: 1rem;
+  padding: 0;
+}
+
+.history li {
+  padding: 0.5rem;
+  border-bottom: 1px solid #eee;
+}
+
+.controls {
+  text-align: center;
+}
+
+.controls button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #28a745;
+  color: #fff;
+  cursor: pointer;
+}
+
+.controls button:hover {
+  background-color: #218838;
+}
+
+.controls button:focus {
+  outline: none;
+}
